@@ -153,10 +153,6 @@ class Bot {
                 $definitionText .= "\n\nExample:\n" . $found->example;
             }
 
-            if (count($json->list) > 1) {
-                $definitionText .= "\n\nFound " . count($json->list) . " definitions.";
-            }
-
             return $definitionText;
         }
 
