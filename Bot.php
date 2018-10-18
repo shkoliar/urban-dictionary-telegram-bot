@@ -1,12 +1,13 @@
 <?php
- /**
+/**
  * @author: Dmitry Shkoliar @DrmitryNek
  * @created: 12.07.15 12:50
  * @project: urban-dictionary-telegram-bot
  * @file: Bot.php
  */
 
-class Bot {
+class Bot
+{
 
     /**
      * Telegram Bot API Url
@@ -234,8 +235,8 @@ class Bot {
 
         if ($command == "/help" || $command == "/help@urbanbot") {
             $message = "Send /define command with your query to get definition from Urban Dictionary. " .
-                        "Also you can append *number of definition which you wish to get.\n\n" .
-                        "Example: \"/define handsome\" or \"/define handsome *2\" to get second definition.";
+                "Also you can append *number of definition which you wish to get.\n\n" .
+                "Example: \"/define handsome\" or \"/define handsome *2\" to get second definition.";
         } else if (($command == "/define" || $command == "/define@urbanbot") && $query) {
             $message = $this->getUrbanDictionaryDefinition($query, $definition);
         } else if ($command == "/define" || $command == "/start" || $command == "/define@urbanbot" || $command == "/start@urbanbot") {
