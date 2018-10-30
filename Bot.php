@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: Dmitry Shkoliar @DrmitryNek
+ * @author: Dmitry Shkoliar @shkoliar
  * @created: 12.07.15 12:50
  * @project: urban-dictionary-telegram-bot
  * @file: Bot.php
